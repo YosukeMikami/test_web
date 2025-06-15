@@ -6,7 +6,7 @@ function App() {
     const [result, setResult] = useState(null);
 
     const handleEvaluate = async () => {
-        const url = `http://localhost:8000/evaluate?expr=${encodeURIComponent(expr)}&x=${x}`;
+        const url = `https://test-web-ftqp.onrender.com/evaluate?expr=${encodeURIComponent(expr)}&x=${x}`;
         console.log(url);
         const res = await fetch(url);
         const data = await res.json();
