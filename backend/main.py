@@ -6,7 +6,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allows all origins, adjust as needed
+    allow_origins=["https://test-web-nu-nine.vercel.app"],  # Allows all origins, adjust as needed
     allow_credentials=True,
     allow_methods=["*"],  # Allows all methods, adjust as needed
     allow_headers=["*"],  # Allows all headers, adjust as needed
